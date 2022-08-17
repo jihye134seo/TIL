@@ -66,14 +66,24 @@
              이 방법은 데이터가 낭비된다. -> 교차검증 이용!
   - K-Fold : 모든 데이터를 최소한 한 번씩 학습시키기
 
+
 단계4. 튜닝
  - Hyperparameter Optimization 
   - 하이퍼파라미터(학습에서 사전에 설정하는 값)의 최적값 탐색
   - Manual Search, Grid Search, Random Search, Bayesian optimization 등의 방법이 있다.
- [출처 : https://wooono.tistory.com/102 ] 
   
+ - Grid Search : 탐색할 값들을 미리 지정하고, 그들의 모든 조합을 바탕으로 성능의 최고점을 찾는다.
+               : 원하는 범위를 정확하게 비교분석 가능, 시간이 오래걸림, 성능의 최고점이 아닐 가능성 높음
  
- - Bayesian Optimization
+ - Random Search : 탐색할 값들의 범위를 미리 지정하고 그 범위에서 가능한 조합을 바탕으로 최고점을 찾는다.
+                 : 시간이 짧게 걸림, 성능이 좋은 경우도 생기고 나쁜 경우도 생김
+ 
+ - Bayesian Optimization : 하이퍼파라미터 범위 지정 후 무작위로 R번 탐색 후 B번 만큼 최적의 값을 찾는다.
+                         : 시간이 짧게 걸림, 신뢰성 있음, 최적의 값 찾기 가능
+                         : Random하게 찍은 값이 달라지면, 최적화 과정이 오래 걸릴 수 있다.
+                         : Random하게 찍은 값이 부족하면, 최적의 값 탐색 불가능할 수 있음
+                         : Random하게 찍은 값이 너무 많으면, 최적화 이전에 이미 최적값을 가질 수 있음
+
 
 
 [ 마지막에 수행되는 과정 ]
