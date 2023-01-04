@@ -1,5 +1,9 @@
 # 마크다운 문법 정리
-[참고 자료](https://heropy.blog/2017/09/30/markdown/)
+[참고자료1](https://heropy.blog/2017/09/30/markdown/)<br>
+[참고자료2](https://www.whatwant.com/entry/GitHub-LaTex)<br>
+[참고자료3](https://ansohxxn.github.io/blog/markdown/)<br>
+[참고자료4](https://velog.io/@chelmini/MarkDown-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
 
 ---
 ## 제목
@@ -127,3 +131,48 @@ public static void main(String[] args){
 - br태그 사용
 
 안녕하세요 \<br\><br> 처음 뵙겠습니다.
+
+---
+## 수식표현
+- LaTex문법 표현을 따른다.
+- code block 방식 : 수식만 단독 출력 / $$ 사이에 수식 정의
+- inline 방식 : 텍스트 중간에 수식 표현 / $ 사이에 수식 정의
+
+inline 방식 : $ x+y = 1$<br>
+code block 방식 : $$ x+y+z = 3 $$
+
+[LaTex문법 참고](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)
+
+---
+## 토글 리스트
+- details태그, summary태그, div태그를 사용한다.
+
+<details>
+<summary>토글상자</summary>
+<div markdown="1">
+토글 내용
+</div>
+</details>
+
+
+---
+## 버튼
+- html a태그 사용
+- class를 "btn-success"로 지정함<br>
+<a href="https://github.com/jihye134seo" class="btn-success">BTN</a>
+
+---
+## 체크 박스
+
+- [ ] 빈 체크박스
+- [x] 체크된 체크박스
+
+---
+## 글자 색상
+- html span태그를 사용한다.
+- style 속성에서 color값을 지정한다.
+
+<span style="color: blue">blue</span>
+
+---
+## 이모지
