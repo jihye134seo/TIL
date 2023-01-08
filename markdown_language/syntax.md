@@ -3,7 +3,8 @@
 [참고자료2](https://www.whatwant.com/entry/GitHub-LaTex)<br>
 [참고자료3](https://ansohxxn.github.io/blog/markdown/)<br>
 [참고자료4](https://velog.io/@chelmini/MarkDown-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95)
-
+[참고자료5](http://flowchart.js.org/)
+[참고자료6](https://inpa.tistory.com/entry/MarkDown-%F0%9F%93%9A-Emoji-%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 ---
 ## 제목
@@ -176,3 +177,24 @@ code block 방식 : $$ x+y+z = 3 $$
 
 ---
 ## 이모지
+\: 이모지 이름 \:
+
+:camel:
+
+---
+## UML 다이어그램
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End|future:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|future
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
